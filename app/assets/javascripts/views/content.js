@@ -1,9 +1,8 @@
 MarketApp.Views.Content = Backbone.View.extend({
+
   template: HandlebarsTemplates['content'],
 
   className: 'content-view',
-
-  initialize: function() {},
 
   render: function() {
     this.$el.html(this.template());
