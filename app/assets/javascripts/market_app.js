@@ -4,7 +4,8 @@ window.MarketApp = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    new MarketApp.Routers.MainRouter();
+    Backbone.history.start();
   }
 };
 
