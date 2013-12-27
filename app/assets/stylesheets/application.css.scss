@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import 'bootstrap';
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  padding-top: 70px;
+}
+
+#wrap {
+  height: auto !important;
+  margin: 0 auto -30px;
+  min-height: 100%;
+}
+
+#push, #footer {
+  height: 30px;
+}
+
+#footer, #header {
+  background-color: #432166;
+  opacity: 0.9;
+}
+
+#footer, #header {
+  p {
+    font-weight: bold;
+    padding-left: 30px;
+    color: #FFF;
+  }
+}
+
+#footer {
+  p {
+    font-size: 12px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}
+
+#header {
+  height: 60px;
+
+  p {
+    font-size: 2.5em;
+    line-height: 60px;
+
+    &:after {
+      color: rgba(190, 169, 212, 0.5);
+      content: "Black Market App";
+      left: 26px;
+      position: absolute;
+      top: -2px;
+      z-index: -1;
+    }
+  }
+}

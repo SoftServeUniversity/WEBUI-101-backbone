@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MarketApp</title>
+  <title>BMarket</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="wrap">
+  <div id="header" class="navbar navbar-default navbar-fixed-top"></div>
+  <div class="container">
+    <div class="row">
+      <div id="content"></div>
+    </div>
+  </div>
+  <div id="push"></div>
+</div>
+<div id="footer"></div>
 <%= yield %>
 
 </body>
