@@ -4,9 +4,21 @@ MarketApp.Views.Content = Backbone.View.extend({
 
   className: 'content-view',
 
+
+
   render: function() {
     this.$el.html(this.template());
+    /* this.renderCategoriesView();*/
     return this;
+  },
+
+  renderCategoriesView: function() {
+    var v;
+    console.log("df");
+    v = new MarketApp.Views.Categories({
+      collection: new MarketApp.Collections.Categories
+    });
+    return this.$('#content1').html(v.render().el);
   },
 
   swapMain: function(v) {

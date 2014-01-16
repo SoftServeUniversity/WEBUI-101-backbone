@@ -18,7 +18,7 @@ MarketApp.Routers.MainRouter = Backbone.Router.extend({
 
   index: function() {
     this.layoutViews();
-    this.contentView.swapSide(new MarketApp.Views.DefaultAside());
-    this.contentView.swapMain(new MarketApp.Views.DefaultMain());
+    this.contentView.swapSide(new MarketApp.Views.Categories({ collection: new MarketApp.Collections.Categories }));
+    this.contentView.swapMain(new MarketApp.Views.Products({ collection: new MarketApp.Collections.Products }));
   }
 });
